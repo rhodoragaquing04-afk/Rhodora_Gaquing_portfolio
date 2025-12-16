@@ -1,74 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style .css"> 
-    <!-- naka-link sa external CSS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platform Technology Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<script src="main.js"></script>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <h1 class="logo">My Portfolio</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#What I Can Do">What I Can Do</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <h2>Hello, I'm <span>Rhodora Gaquing</span></h2>
-        <p>Bachelor Sience Information Technology</p>
-        <a href="#projects" class="btn">See My Work</a>
-    </section>
+<header>
+    <h1>Platform Tech Portfolio</h1>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Activities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-           Hi I'm Rhodora Gaquing and I am 19 years old from Santa Cruz, Occidental Mindoro, currently pursuing a Bachelor of Science in Information Technology (BSIT) at OMSC Mamburao Campus. I am passionate about technology and eager to develop my skills to become a future software engineer. One of my strengths is decision-making, which helps me approach challenges with confidence and problem-solving mindset.
-           Outside academics, I have a talent for playing four different musical instruments, showing my creativity, discipline, and dedication in both arts and technology.
-        </p>
-    </section>
+<main>
+  
+<section class="section active" id="about">
+    <div class="container">
+        <div class="profile-card">
+            <img src="/IMG/profile.jpg" alt="Profile Picture" />
+            <h2>Hello! I'm <span>Rhodora Gaquing</span></h2>
+            <p>BSIT 2A</p>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>What I Can Do</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>My skills</h3>
-                <p>Decision-making and problem-solving</p>
-                <p>Communication and teamwork</p>
-                <p>Time management</p>
-                <p>Critical thinking</p>
+           
+            <div class="about-me-content">
+                <h3>About Me</h3>
+                <p>My name is Rhodora Gaquing. I am 19 years old and currently a second-year college student pursuing a</p>
+                <p>Bachelor of Science in Information Technology, a field where I continue to explore and develop my skills.</p>
+    
+           
+        </div>
+    </div>
+</section>
+   
+<section class="section" id="skills">
+  <div class="container">
+    <h2>My Abilities</h2>
 
+   
+    <div class="activity-tabs">
+      <button class="tab-btn active" data-target="ability">Ability</button>
+      <button class="tab-btn" data-target="talent">Talent</button>
+      <button class="tab-btn" data-target="hobbies">Hobbies</button>
+    </div>
+
+   
+    <div class="activity-content active" id="ability">
+      <h3>My Technical Abilities</h3>
+      <div class="activity-grid">
+        <div class="skill-item">HTML & CSS</div>
+        <div class="skill-item">JavaScript (DOM Manipulation)</div>
+        <div class="skill-item">Python / Java (Basic)</div>
+        <div class="skill-item">Git & Version Control</div>
+      </div>
+    </div>
+
+   
+    <div class="activity-content" id="talent">
+      <h3>My Talents</h3>
+      <div class="activity-grid">
+        <div class="skill-item">Playing Music</div>
+        <div class="skill-item">Singing</div>
+        <div class="skill-item">Callegraphy</div>
+        <div class="skill-item">Design Thinking</div>
+      </div>
+    </div>
+
+    
+    <div class="activity-content" id="hobbies">
+      <h3>My Hobbies</h3>
+      <div class="activity-grid">
+        <div class="skill-item">Reading</div>
+        <div class="skill-item">Gaming</div>
+        <div class="skill-item">Listening to Music</div>
+        <div class="skill-item">Watching Movies</div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<section class="section" id="projects">
+    <div class="container">
+        <h2>Activities</h2>
+
+       
+        <div class="activity-tabs">
+            <button class="tab-btn active" data-target="midterm">Midterm</button>
+            <button class="tab-btn" data-target="final">Final</button>
+        </div>
+
+      
+        <div class="activity-content active" id="midterm">
+            <h3>📌 Midterm Activities</h3>
+            <div class="activity-grid">
+                <img src="/IMG/Screenshot 2025-12-15 205358.png" alt="Midterm Activity" class="activity-img">
+                <img src="/IMG/Screenshot 2025-12-15 205413.png" alt="Midterm Activity" class="activity-img">
+                <img src="/IMG/Screenshot 2025-12-15 205426.png" alt="Midterm Activity" class="activity-img">
+                <img src="/IMG/Screenshot 2025-12-15 205444.png" alt="Midterm Activity" class="activity-img">
+                <img src="/IMG/Screenshot 2025-12-15 205510.png" alt="Midterm Activity" class="activity-img">
+                <img src="/IMG/Screenshot 2025-12-15 210233.png" alt="Midterm Activity" class="activity-img">
             </div>
-            <div class="project-card">
-                <h3>My Talent</h3>
-                <p>playing four different musical instruments,
-                    which is the ukulele,Violine,Guitar,Piano and ofcource I'm singing                </p>
-            
+        </div>
+
+        
+        <div class="activity-content" id="final">
+            <h3>🎯 Final Activities</h3>
+            <div class="activity-grid">
+                <img src="/IMG/Screenshot 2025-12-15 210740.png" alt="Final Activity" class="activity-img">
+                <img src="/IMG/Screenshot 2025-12-15 210757.png" alt="Final Activity" class="activity-img">
+                <img src="/IMG/Screenshot 2025-12-15 210808.png" alt="Final Activity" class="activity-img">
+                <img src="/IMG/Screenshot 2025-12-15 210816.png" alt="Final Activity" class="activity-img">
+                <img src="/IMG/Screenshot 2025-12-15 210826.png" alt="Final Activity" class="activity-img">
+                <img src="/IMG/Screenshot 2025-12-15 210835.png" alt="Final Activity" class="activity-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <section class="section" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Contact No: 0967458654</p>
+            <p>Gmail: rhodoragaquing04@gmail.com</p>
+            <p>Facebook: Rhodora Gaquing</p>
+            <p>Instagram: Rhaido</p>
+            <p>Tiktok: Samie_rays</p>
+        </div>
     </section>
+</main>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:youremail@gmail.com">rhodoragaquing@gmail.com</a></p>
-        <p>Facebook: <a href="#">Rhodora Gaquing</a></p>
-        <p>Contact Number: <a href="#">09947527969</a></p>
-    </section>
+<footer>
+    <p>Rhodora's Portfolio</p>
+</footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Your Name | All Rights Reserved</p>
-    </footer>
-
-    <script src="script.js"></script> <!-- naka-link sa external JS -->
+<script src="main.js"></script>
 </body>
 </html>

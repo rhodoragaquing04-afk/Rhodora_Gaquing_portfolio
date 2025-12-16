@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #ef4444;        /* Red instead of blue */
+    --primary-dark: #dc2626;   /* Darker red for hover */
+    --text: #f1f1f1;
+    --text-light: #a0aec0;
+    --bg: #0f0f0f;
+    --card-bg: #1a1a1a;
+    --border: #2d2d2d;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #000;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #cbd5e0;
+    margin: 0 16px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    margin-top: 120px;
+    min-height: calc(100vh - 160px);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* SECTIONS */
+.section {
+    display: none;
+    padding: 50px 0;
+    animation: fadeIn 0.6s ease;
+}
+
+.section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* PROFILE CARD */
+.profile-card {
+    background: var(--card-bg);
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+    margin-bottom: 20px;
+}
+
+.profile-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.profile-card span {
+    color: var(--primary);
+}
+
+.profile-card p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+/* ABOUT ME CONTENT */
+.about-me-content {
+    margin-top: 30px;
+    padding: 20px;
+    background: #252525;
+    border-radius: 12px;
+    line-height: 1.6;
+    color: #e2e8f0;
+    border: 1px solid var(--border);
+}
+
+.about-me-content h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.about-me-content p {
+    margin-bottom: 15px;
+}
+
+/* SKILLS */
+/* SKILL TABS */
+/* SKILL TABS */
+/* ===== SKILLS TABS ===== */
+/* ===== SKILLS TABS ===== */
+.activity-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tab-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: var(--card-bg);
+    color: var(--text);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.tab-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--secondary);
+}
+
+.activity-content {
+    display: none;
+}
+
+.activity-content.active {
+    display: block;
+}
+
+.tab-btn.active {
+    background: #ef4444;
+    color: white;
+}
+
+/* SKILL CONTENT */
+.skill-content {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.skill-content.active {
+    display: block;
+}
+
+/* SKILL LIST */
+.skill-content ul {
+    margin: 20px 0 0 20px;
+    list-style-type: none;
+}
+
+.skill-content li {
+    background: #252525;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary);
+    font-weight: 500;
+    color: #e2e8f0;
+}
+/* ACTIVITY TABS */
+.activity-tabs {
+    display: flex;
+    gap: 12px;
+    margin: 24px 0;
+    justify-content: center;
+}
+
+.tab-btn {
+    padding: 10px 24px;
+    background: #2d2d2d;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background: #ef4444;
+    color: white;
+}
+
+.tab-btn.active {
+    background: #ef4444;
+    color: white;
+}
+
+/* ACTIVITY CONTENT */
+.activity-content {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.activity-content.active {
+    display: block;
+}
+
+/* IMAGE GRID */
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.activity-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border: 1px solid var(--border);
+    transition: transform 0.2s ease;
+}
+
+.activity-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.activity-img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+}
+
+/* CONTACT */
+#contact .container h2,
+#contact .container p {
+    text-align: center;
+}
+#contact .container p {
+    color: var(--text-light);
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+}
+
+/* GOOGLE FONTS - Poppins */
+/* Hindi na kailangan idagdag dito, kasi nasa HTML na */
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 0;
+    }
+    nav a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+    .profile-card {
+        padding: 40px 20px;
+    }
+}
